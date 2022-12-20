@@ -21,21 +21,22 @@ const fetchRecipes = () => {
         <h1 className="title" >Our Recipies</h1>
         <br />
         <ul className ="recipe-list">
-        {recipes.map(recipe => (
-          <li key={recipe.uuid} className="recipe">
-            <p><b>{recipe.name}</b> ({recipe.difficulty})</p>
-            <p><b>By {recipe.author}</b></p><br />
-            <img src={recipe.images} alt={recipe.name} width={250} height={250}/> <br />  
-            <p><b>Description</b></p>
-            <p>{recipe.description}</p><br />
-
-            <p><b>Ingredients</b></p>
-            <p>{recipe.ingredientss}</p><br />
-            <p><b>Instructions</b></p>
-            <p>{recipe.instructionss}</p>
+        {recipes.map((recipe) => {
+          return <li key={recipe.uuid} className="recipe">
+              <p><b>{recipe.name}</b> ({recipe.difficulty})</p>
+              <p><b>By {recipe.author}</b></p><br />
+              <img src={recipe.images} alt={recipe.name} width={250} height={250}/> <br />  
+              <p><b>Description</b></p>
+              <p>{recipe.description}</p><br />
+              <p><b>Ingredients</b></p>
+         {
+          recipe.ingredients.map((item) => {
+              return <p>{item['measurement-size']}{item['measurement-weight']}{item['measurement-type']} {item.ingredient} {item.note}</p>
+          })}
           </li>
-        ))}
-      </ul> 
+        })}
+        
+          </ul> 
       </div>
     );
   };

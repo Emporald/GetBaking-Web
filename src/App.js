@@ -9,9 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       <div className='content'>
-        <Home />
-        <Recipe />
-        <CreateRecipe />
+        <div id='homepage'><Home /> </div>
+        <div id='recipepage'><Recipe /></div>
+        <div id='createrecipepage'><CreateRecipe /></div>
+        <br /> <br /> <br /> <br /> <br />
       </div>
       <div className='footer'>
         <Footer />
