@@ -29,13 +29,18 @@ const fetchRecipes = () => {
               <p><b>Description</b></p>
               <p>{recipe.description}</p><br />
               <p><b>Ingredients</b></p>
+          
          {
           recipe.ingredients.map((item) => {
               return <p>{item['measurement-size']}{item['measurement-weight']}{item['measurement-type']} {item.ingredient} {item.note}</p>
           })}
+          <br /><p><b>Instructions & Steps</b></p>
+          {
+          recipe.instructions.map((item) => {
+              return <p>{item.steps}</p>
+          })}
           </li>
-        })}
-        
+        })}        
           </ul> 
       </div>
     );
