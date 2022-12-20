@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GetBaking-Web/static/css/main.b6740b32.css",
+    "main.js": "/GetBaking-Web/static/js/main.e86d8280.js",
+    "index.html": "/GetBaking-Web/index.html",
+    "main.b6740b32.css.map": "/GetBaking-Web/static/css/main.b6740b32.css.map",
+    "main.e86d8280.js.map": "/GetBaking-Web/static/js/main.e86d8280.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6740b32.css",
+    "static/js/main.e86d8280.js"
+  ]
+}
