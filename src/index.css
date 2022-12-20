@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* General CSS */
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  background-color: #ffff80;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.space-line{
+  max-width: 600px;
+  margin: 40px auto;
+  border-top: 1px solid #000000;
+}
+
+.title{
+  color:  #FF80C4;
+  text-shadow: 1.5px 1.5px rgb(0, 0, 0);
+  text-decoration-line: underline;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Recipe CSS */
+
+.recipe {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #FF80C4;
+  background: #FF80C4;
+}
+
+.recipe p, .recipe b{
+  background-color: #FF80C4;
+  text-align: center;
+}
+
+.recipe img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 2px solid #000000;
+}
+
+.recipe-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar CSS */
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 01 auto;
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  top: 0;
+}
+
+.navbar h1 {
+  color:  #FF80C4;
+  text-shadow: 1.5px 1.5px rgb(0, 0, 0);
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #FF80C4;
+}
+
+/* Footer CSS */
+
+.footer{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-top: 1px solid #000000;
+}
